@@ -1,17 +1,25 @@
-{"intents": [
-    {"tag": "saudacao",
-     "patterns": ["Ola!!", "Como voce esta?", "Tem alguem ai?",
-                    "Oi","Oie", "Alo"],
-     "responses": ["Ola!!, obrigado por perguntar.", "Que bom ver voce novamente.", 
-                    "Ola, como posso ajudar?"]
+{"intents": [ 
+    {
+    "tag": ["oi"], 
+    "patterns": ["olá", "oi, tudo bem?", "oi","oie","bom dia","boa tarde","boa noite", "oi, como vc esta?"], 
+    "responses": ["olá","saudações humano","estou ocupado, espere um minuto","me deixe em paz"] 
+    }, 
+    {
+    "tag": ["tchau"], 
+    "patterns": ["tchau", "adeus", "até mais", "falou"], 
+    "responses": ["tchau humano","finalmente!","nao via a hora de vc ir embora"] 
     },
-    {"tag": "despedida",
-     "patterns": ["Tchau", "Nos vemos depois", "Adeus", "Foi bom falar com voce, tchau", 
-                  "Ate a proxima"],
-     "responses": ["Nos vemos!", "Tenha um otimo dia", "Tchau! Volte logo.",
-                   "Tenha um excelente dia"]            
-    }
-  ]
-}
+    {   
+    "tag": ["comida"], 
+    "patterns": ["qual sua comida favorita?", "oq vc mais gosta de comer", "oq vc gostaria de comer no momento?"], 
+    "responses": ["oléo", "nada", "nao te interessa, HUMANO"] }, 
+    {
+        "tag": ["piadas"], 
+        "patterns": ["me conte uma piada", "me faça rir"], 
+        "responses": ["Qual é o carro que saiu do forno?O Kia Soul", "Qual a diferença entre o padre e a Mercedes?O padre reza e a Mercedes-Benz","Qual a parte do carro que não se deve misturar com Coca Zero? O escapa mentos"] 
+    }, 
+    {
+        "tag": ["nao entendi"], 
+        "patterns": [""], 
+        "responses": ["não entendi...burro!", "homo sapiens!!! >:(", "escreva direito!", "VOCE ESTÁ COM VIRUS, CLIQUE AQUI PARA TIRAR!!!!! ==>https://linkvirus/vchomosapiens <=="] } ] }
 
-    
